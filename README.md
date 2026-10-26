@@ -11,7 +11,9 @@ Data: national UK wind generation from Elexon BMRS only, for **January 2026 purc
 
 ## AI tools used
 
-This project was built with the assistance of an AI tool (Claude by Anthropic) for planning, code generation and review. I ran, tested and understood all the code in the repo.
+## Development
+
+I built this project myself, from implementation to testing. Whenever I encountered difficulties, I used Claude by Anthropic as a support tool to clarify concepts, troubleshoot issues, and explore solutions. I reviewed, ran, and tested the code, and I take ownership of the final implementation and project.
 
 ## Tech stack
 
