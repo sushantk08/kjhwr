@@ -1,3 +1,7 @@
+import os
+from pathlib import Path
+
+from fastapi.staticfiles import StaticFiles
 from functools import lru_cache
 
 import pandas as pd
@@ -80,3 +84,8 @@ def get_metrics(cutoff_hour: int = CutoffHour):
         "by_day": metrics_by_day(df),
         "by_horizon": metrics_by_horizon(df),
     }
+
+# Serve the built React app (present in the Docker image, absent in local dev)
+STATIC_DIR = Path(os.environ.get("STATIC_DIR", Path(__file__).resolve().parent.parent / "static"))
+if STATIC_DIR.is_dir():
+    app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")
