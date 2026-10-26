@@ -11,3 +11,6 @@ export const fetchDays = (cutoffHour) =>
 
 export const fetchForecast = (day, cutoffHour) =>
   getJson(`/api/forecast?day=${day}&cutoff_hour=${cutoffHour}`)
+
+export const fetchMetrics = (cutoffHour) =>
+  getJson(`/api/metrics?cutoff_hour=${cutoffHour}`)

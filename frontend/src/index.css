@@ -109,3 +109,33 @@ h1 {
   padding: 8px 12px;
   font-size: 13px;
 }
+
+h2 {
+  font-size: 18px;
+  margin: 24px 0 8px;
+}
+
+.note {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #e1e6ee;
+}
+
+th {
+  color: #6b778c;
+  font-weight: 500;
+}

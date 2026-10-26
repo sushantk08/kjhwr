@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ForecastPage from './pages/ForecastPage'
+import AccuracyPage from './pages/AccuracyPage'
 
 export default function App() {
   const [tab, setTab] = useState('forecast')
@@ -21,7 +22,7 @@ export default function App() {
       </div>
 
       {tab === 'forecast' && <ForecastPage />}
-      {tab === 'accuracy' && <p>Accuracy view coming in the next step.</p>}
+      {tab === 'accuracy' && <AccuracyPage />}
     </div>
   )
 }

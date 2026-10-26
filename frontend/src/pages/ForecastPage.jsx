@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react'
 import { fetchDays, fetchForecast } from '../api'
 import ForecastChart from '../components/ForecastChart'
 import { formatDateTime, formatMW, formatTime } from '../format'
-
-const CUTOFF_OPTIONS = [6, 7, 8, 9, 10, 11, 12]
+import { CUTOFF_OPTIONS, DEFAULT_CUTOFF_HOUR } from '../constants'
 
 export default function ForecastPage() {
-  const [cutoffHour, setCutoffHour] = useState(9)
+  const [cutoffHour, setCutoffHour] = useState(DEFAULT_CUTOFF_HOUR)
   const [days, setDays] = useState([])
   const [day, setDay] = useState('')
   const [data, setData] = useState(null)
